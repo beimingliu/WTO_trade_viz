@@ -94,9 +94,8 @@ def start_webserver(client):
     Assuming the appropriate repo has been installed
     run the web_server.py to star the service
     """
-    _, stdout, _ = client.exec_command("source ~/py36/bin/activate")
-    print(stdout.read())
-    bash_cmd = 'cd ~/WTO_trade_viz; gunicorn -D --threads 4 -b 0.0.0.0:8080 server:app'
+    # made a shortcut
+    bash_cmd = 'source /home/ec2-user/py36/bin/activate; cd ~/WTO_trade_viz; gunicorn -D --threads 4 -b 0.0.0.0:8080 server:app'
     client_bash(client, bash_cmd, verbose=True)
     print("web server started")
 

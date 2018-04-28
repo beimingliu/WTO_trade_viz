@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, send_from_directory
 import os
 
 #################################################################
@@ -39,6 +39,27 @@ def HomeHandler():
     return render_template('index.html')
 
 
+@app.route('/chart1')
+def ChartHandler():
+    """
+    """
+    return render_template('chart1.html')
+
+
+@app.route('/images/<path:path>')
+def send_images(path):
+    return send_from_directory('images', path)
+
+
+@app.route('/assets/<path:path>')
+def send_assets(path):
+    return send_from_directory('assets', path)
+
+@app.route('/css/<path:path>')
+def send_css(path):
+    return send_from_directory('css', path)
+
+
 @app.route('/test')
 def test_connection():
     """
@@ -63,3 +84,6 @@ def shutdown():
         # if running python server.py (using werkzeug)
         func()
     return "Process shutting down..."
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=8080, debug=True)

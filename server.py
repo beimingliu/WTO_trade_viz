@@ -39,11 +39,25 @@ def HomeHandler():
     return render_template('index.html')
 
 
-@app.route('/chart1')
-def ChartHandler():
+@app.route('/startups')
+def StartupHandler():
     """
     """
-    return render_template('chart1.html')
+    return render_template('startups.html')
+
+
+@app.route('/usfood')
+def USFoodHandler():
+    """
+    """
+    return render_template('usfood.html')
+
+
+@app.route('/imports')
+def ImportsHandler():
+    """
+    """
+    return render_template('imports.html')
 
 
 @app.route('/images/<path:path>')
@@ -54,6 +68,7 @@ def send_images(path):
 @app.route('/assets/<path:path>')
 def send_assets(path):
     return send_from_directory('assets', path)
+
 
 @app.route('/css/<path:path>')
 def send_css(path):

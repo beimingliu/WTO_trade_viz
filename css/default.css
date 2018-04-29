@@ -186,7 +186,7 @@
 	{
 		display: inline-block;
 		padding: 0em 3em;
-		background: #2C7FB8;
+		background: #af1641;
 		border-radius: 7px;
 		letter-spacing: 0.20em;
 		line-height: 4em;
@@ -310,7 +310,7 @@
 
 	#header-wrapper
 	{
-		background: #2c7fb8;
+		background: #af1641;
 	}
 
 	#header
@@ -384,7 +384,7 @@
 	
 	#menu .current_page_item a
 	{
-		background: #2c7fb8;
+		background: #af1641;
 		color: #FFF;
 	}
 	
@@ -400,10 +400,10 @@
 	{
 		overflow: hidden;
 		padding: 7em 0em 5em 0em;
-		background: #2c7fb8;
+		background: #af1641;
 		background-size: cover;
 		text-align: center;
-		color: rgba(44,127,184,.8);
+		color: rgba(255,255,255,.8);
 	}
 
 	#banner .title
@@ -419,7 +419,7 @@
 
 	#banner .title .byline
 	{
-		color: rgba(44,127,184,.6);
+		color: rgba(255,255,255,.6);
 	}
 	
 	#banner .button
@@ -477,20 +477,20 @@
 	{
 		overflow: hidden;
 		padding: 5em 0em;
-		border-top: 1px solid rgba(44,127,184,0.08);
+		border-top: 1px solid rgba(255,255,255,0.08);
 	}
 	
 	#copyright p
 	{
 		text-align: center;
 		font-size: 1em;
-		color: rgba(44,127,184,0.5);
+		color: rgba(255,255,255,0.5);
 	}
 	
 	#copyright a
 	{
 		text-decoration: none;
-		color: rgba(44,127,184,0.8);
+		color: rgba(255,255,255,0.8);
 	}
 
 /*********************************************************************************/
@@ -501,14 +501,14 @@
 	{
 		overflow: hidden;
 		padding: 5em 0em;
-		background: #2c7fb8;
-		color: rgba(44,127,184,.8);
+		background: #af1641;
+		color: rgba(255,255,255,.8);
 		text-align: center;
 	}
 
 	#featured a
 	{
-		color: rgba(44,127,184,1);
+		color: rgba(255,255,255,1);
 	}
 	
 	#featured .button
@@ -516,7 +516,7 @@
 		background: #FFF;
 		margin-top: 3em;
 		font-size: 1em;
-		color: #2c7fb8;
+		color: #af1641;
 	}
 
 	#featured img
@@ -532,7 +532,7 @@
 
 	#featured .title .byline
 	{
-		color: rgba(44,127,184,.6);
+		color: rgba(255,255,255,.6);
 	}
 
 /*********************************************************************************/

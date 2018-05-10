@@ -60,6 +60,13 @@ def ImportsHandler():
     return render_template('imports.html')
 
 
+@app.route('/volatility')
+def VolatileHandler():
+    """
+    """
+    return render_template('volatility.html')
+
+
 @app.route('/images/<path:path>')
 def send_images(path):
     return send_from_directory('images', path)
